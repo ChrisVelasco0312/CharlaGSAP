@@ -1,0 +1,59 @@
+:root {
+    --body-bg: rgb(43, 38, 66);
+    --blue: rgb(128, 244, 255);
+    --green: rgb(128, 255, 156);
+    --red: rgb(255, 128, 128);
+    --yellow: rgb(247, 255, 128);
+}
+
+body {
+    background-color: var(--body-bg);
+    font-family: 'Noto Serif', serif;
+}
+
+/* CIRCLE EXAMPLE */
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+div.ball,
+.ball2,
+.ball3,
+.ball4 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    background: var(--blue);
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+/* div.container {
+    display: flex;
+    width: 100vw;
+}
+
+div.container>.box {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    margin-right: 10px;
+} */

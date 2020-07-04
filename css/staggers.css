@@ -1,0 +1,84 @@
+:root {
+    --dark-purple: #1E152A;
+    --cadet-blue: #5AB1BB;
+    --jasmine: #F7DD72;
+    --pistachio: #A5C882;
+    --deep-space: #4E6766;
+}
+
+body {
+    background: var(--dark-purple);
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    background: var(--jasmine);
+    opacity: 0
+}
+
+div.btn {
+    width: 50px;
+    height: 50px;
+    color: var(--cadet-blue);
+    border: 2px solid var(--jasmine);
+    cursor: pointer;
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+}
+
+div.btn>p {
+    position: relative;
+    top: -20px;
+    left: 3px;
+
+}
+
+div.btn:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.ball {
+    position: relative;
+    top: -115px;
+    left: -25px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    transform-origin: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
