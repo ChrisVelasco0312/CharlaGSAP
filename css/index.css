@@ -72,6 +72,11 @@ div.container>h1.title{
     width:30%;
     text-align: center;
 }
+@media(max-width:500px){
+    div.container>h1.title{
+        width:70%;
+    }
+}
 div.container>h1.title>span{
     color:var(--red);
 }
