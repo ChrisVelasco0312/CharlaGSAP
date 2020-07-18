@@ -1,6 +1,7 @@
 :root {
     --body-bg: rgb(43, 38, 66);
     --blue: rgb(128, 244, 255);
+    --dark-blue: rgb(62, 64, 196);
     --green: rgb(128, 255, 156);
     --red: rgb(255, 128, 128);
     --yellow: rgb(247, 255, 128);
@@ -9,6 +10,8 @@
 body {
     background-color: var(--body-bg);
     font-family: 'Noto Serif', serif;
+    color:var(--blue);
+    box-sizing: border-box;
 }
 
 /* CIRCLE EXAMPLE */
@@ -57,3 +60,59 @@ div.container>.box {
     background: #fff;
     margin-right: 10px;
 } */
+
+
+/* INDEX */
+
+div.container>h1.title{
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    align-self: center;
+    margin-bottom: 0px;
+    width:30%;
+    text-align: center;
+}
+div.container>h1.title>span{
+    color:var(--red);
+}
+div.container>p.brand{
+    font-size: 0.85rem;
+    align-self: center;
+    letter-spacing: 0.12em;
+}
+div.container>p.brand>span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* LIST */
+
+div.container>ul.exp-list{
+    align-self: center;
+    text-align: center;
+    padding-inline-start: 0px;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:200px;
+    opacity:0
+}
+div.container>ul.exp-list>li{
+    width:100%;
+    background-color: var(--blue);
+}
+div.container>ul.exp-list>li>a{
+    display: block;
+    text-decoration: none;
+    color:var(--dark-blue);
+    padding: 10px 0px;
+    font-weight: bold;
+    transition:all 0.3s ease-in-out;
+}
+div.container>ul.exp-list>li>a:hover{
+    color:var(--blue);
+}
+div.container>ul.exp-list>li:hover{
+    background-color: var(--dark-blue);
+}

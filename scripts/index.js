@@ -1,18 +1,24 @@
-let start = document.querySelector('.box');
-start.addEventListener('click', () => {
-    gsap.to('.box', {
-        duration: 0.5,
-        y: 100,
-        stagger: 0.1,
-        ease: 'elastic.out'
+gsap
+    .timeline({
+        defaults: {
+            duration: 2
+        }
+    }
+    )
+    .add('start')
+    .to('.title',
+        {
+            delay:1,
+            text: "Animación en Web con GSAP",
+            color:'var(--red)'
+        }
+        , 'start-=0.1'
+    )
+    .to('p.brand>span>a', {
+        delay: 0.2,
+        text: "por Christian Velasco"
     })
-})
-
-start.addEventListener('mouseover', () => {
-    gsap.to('.box', {
-        duration: 0.5,
-        scale: 1.05,
-        stagger: 0.1,
-        ease: 'expo.out'
+    .to('ul',{
+        delay:0.2,
+        opacity:1
     })
-})
